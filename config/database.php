@@ -68,15 +68,15 @@ return [
 
         'pgsql' => [
             'driver' => 'pgsql',
-            'host' => env('DB_HOST', ''),
+            'host' => env('DB_HOST', 'server-desenv'),
             'port' => env('DB_PORT', '5432'),
-            'database' => env('DB_DATABASE', ''),
-            'username' => env('DB_USERNAME', ''),
-            'password' => env('DB_PASSWORD', ''),
+            'database' => env('DB_DATABASE', 'corporativo'),
+            'username' => env('DB_USERNAME', 'postgres'),
+            'password' => env('DB_PASSWORD', 'postgres'),
             'charset' => 'utf8',
-            'prefix' => env('TABLE_PREFIX', ' '),
-            'schema' => env('TABLE_SCHEMA', ' '),
-            'sslmode' => 'prefer',
+            'prefix' => '',
+            'schema' => 'l5ekb',
+
         ],
 
     ],
