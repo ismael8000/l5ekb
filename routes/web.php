@@ -14,3 +14,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('usuarios', function( ) {
+  $u= \App\User::all();
+    dd( $u->toArray() );
+    // return view('users_.index')->with(['userss' => $users_]);
+
+});
