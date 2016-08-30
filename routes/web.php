@@ -16,7 +16,7 @@ Route::get('/', function () {
 });
 
 Route::get('usuarios', function( ) {
-  $u= \App\User::all();
+  $u = \Louis\Model\User::all();
     dd( $u->toArray() );
     // return view('users_.index')->with(['userss' => $users_]);
 
