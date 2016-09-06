@@ -16,8 +16,15 @@ Route::get('/', function () {
 });
 
 Route::get('usuarios', function( ) {
-  $u = \Louis\Model\User::all();
-    dd( $u->toArray() );
+  $users = Louis\Models\User::all();
+  $adresses = [];
+  
+  dd(compact('users','addresses'));
+  return view ('users.index')->with(); 
+
+
+    //resources/views/users/index.blade.php
+    // dd( $u->toArray() );
     // return view('users_.index')->with(['userss' => $users_]);
 
 });
