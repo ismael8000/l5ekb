@@ -19,8 +19,7 @@ Route::get('usuarios', function( ) {
   $users = Louis\Models\User::all();
   $adresses = [];
   
-  dd(compact('users','addresses'));
-  return view ('users.index')->with(); 
+  return view('users.index')->with((compact('users','addresses'))); 
 
 
     //resources/views/users/index.blade.php
